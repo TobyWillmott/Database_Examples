@@ -10,10 +10,13 @@ WHERE age>= 15
 
 cursor.execute(select_students)
 first_students = cursor.fetchone()
-more_students = cursor.fetchmany(10)
+more_students = cursor.fetchmany(12)
 other_students = cursor.fetchall()
 
 print(first_students)
 print(more_students)
 print(other_students)
+
+
+
 
